@@ -1,7 +1,7 @@
 #ifndef LZWENCODE_H
 #define LZWENCODE_H
 #include <stdbool.h>
-#include <stdlib.h>  //TODO: Ask McCamish how he dealt with the table in lzwDecode. Had to add this to be able to malloc the table
+#include <stdlib.h>  
 
 /*
  * Name: Dwayne Butler

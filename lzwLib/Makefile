@@ -5,6 +5,7 @@ CFLAGS=-c -std=c99 -Wall -pedantic -I$(INCLUDE) -g
 liblzw.a: lzwEncode.o lzwDecode.o sequence.o dict.o bitStream.o
 	ar cru liblzw.a lzwEncode.o lzwDecode.o sequence.o dict.o bitStream.o
 	ranlib liblzw.a
+	rm *.o
 
 lzwEncode.o: lzwEncode.c $(INCLUDE)lzw.h $(INCLUDE)bitStream.h $(INCLUDE)dict.h $(INCLUDE)sequence.h
 	gcc $(CFLAGS) lzwEncode.c

@@ -8,7 +8,7 @@ bool lzwEncode(unsigned int bits, unsigned int maxBits,
                void (*writeFunc)(unsigned char c, void* context),
                void *context){
 
-    if(bits < LZW_MINIMUM_BITS || bits > LZW_MAXIMUM_BITS || bits > maxBits){
+    if(bits < LZW_MINIMUM_BITS || maxBits > LZW_MAXIMUM_BITS || bits > maxBits){
         fprintf(stderr, "Encoding bits out of range (must be between 8 and 24, inclusive)\n");
         return 0;
     }
