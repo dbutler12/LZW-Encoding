@@ -1,9 +1,10 @@
 # LZW-Encoding
 Library for LZW Encoder and Decoder
 
-Example main file included.
+Example main file included. Use Make to compile using example.c
 
-Make library files first, then link to example file using:
+Self compile, if wanting to link this library into your own file.
+cd into lzwLib and call Make to compile library files first, then link to example file using:
 gcc -o lzw example.c -L./lzwLib -llzw
 
 
